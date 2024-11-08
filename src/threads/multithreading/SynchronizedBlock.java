@@ -64,16 +64,16 @@ class Characters{
         }
 
 
-       ////a harfinden e y kadar alt alta yazdırma: sıralı olmasına gerek yok
-       ////bu todlar hala asenkron bir yekilde treadler tarafından asenkron bir şekilde çalışabilir
-       //for (char i='a'; i<='e';i++){
-       //    try {
-       //        Thread.sleep(500);
-       //    } catch (InterruptedException e) {
-       //        throw new RuntimeException(e);
-       //    }
-       //    System.out.println(i);
-       //}
+       //a harfinden e y kadar alt alta yazdırma: sıralı olmasına gerek yok
+       //bu todlar hala asenkron bir yekilde treadler tarafından asenkron bir şekilde çalışabilir
+       for (char i='a'; i<='e';i++){
+           try {
+               Thread.sleep(500);
+           } catch (InterruptedException e) {
+               throw new RuntimeException(e);
+           }
+           System.out.println(i);
+       }
     }
 }
 
